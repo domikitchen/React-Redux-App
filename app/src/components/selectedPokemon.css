@@ -1,0 +1,13 @@
+.selectedPokemon {
+    border: 1px solid yellow;
+    width: 450px;
+    height: 400px;
+}
+.pokemonImg {
+    width: 50%;
+
+    overflow: hidden;
+}
+.pokemonImg img {
+    width: 100%;
+}
