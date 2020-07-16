@@ -10,7 +10,14 @@ import SelectedPokemon from './components/SelectedPokemon';
 const App = props => {
   return (
     <div className="App">
-      <h1>Pokédex</h1>
+      <header>
+        <div className = "headboi">
+          <div className = "icon">
+            <img src = "https://icons-for-free.com/iconfiles/png/512/pikachu+pokeball+pokemon+icon-1320184857556086253.png" alt = "pokeheck" />
+          </div>
+          <h1>Pokédex</h1>
+        </div>
+      </header>
       <div className = "pokedex">
         <SelectedPokemon loading = {props.isLoadingSelect} error = {props.errorSelect} poke = {props.selectedPoke} />
         <PokemonList list = {props.pokemonList} loading = {props.isLoading} error = {props.error} fetchPokemonList = {props.fetchPokemonList} fetchPokemon = {props.fetchPokemon} />

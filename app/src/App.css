@@ -37,11 +37,33 @@
   }
 }
 
+.headboi {
+  border: 5px solid white;
+  border-radius: 5px;
+  margin: 2%;
+  display: flex;
+  width: 400px;
+  height: 50px;
+  color: white;
+}
+.headboi h1 {
+  margin: 0;
+}
+.icon {
+  width: 48px;
+  margin-right: 100px;
+  overflow: hidden;
+  background-color: white;
+  border-right: 5px solid white;
+}
+.icon img {
+  width: 100%;
+}
 .pokedex {
   margin: 0 auto;
   width: 1200px;
   height: 450px;
-  background-color: ivory;
+  background-color: #ebe6c0;
   border-radius: 20px;
   display: flex;
   flex-flow: row wrap;

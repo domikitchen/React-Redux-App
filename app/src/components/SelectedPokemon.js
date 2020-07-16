@@ -13,7 +13,7 @@ const SelectedPokemon = props => {
             <div className = "types">
                 {
                     props.poke.types.map((ty, index) => {
-                    return(<p key = {index}>{ty.type.name}</p>)
+                    return(<p key = {index} className = {ty.type.name}>{ty.type.name}</p>)
                     })
                 }
             </div>

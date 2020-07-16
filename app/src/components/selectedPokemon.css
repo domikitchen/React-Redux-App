@@ -1,5 +1,4 @@
 .selectedPokemon {
-    border: 1px solid yellow;
     width: 450px;
     height: 400px;
     display: flex;
@@ -8,10 +7,13 @@
     justify-content: space-around;
 }
 .selectedPokemon h3 {
-    margin: 0;
+    margin: 0 auto;
+    width: 60%;
+    border-bottom: 4px solid #e6c563;
 }
 .pokemonImg {
-    border: 1px solid pink;
+    border: 4px solid #bdb49d;
+    border-radius: 5px;
     margin: 0 auto;
     width: 50%;
     overflow: hidden;
@@ -26,6 +28,31 @@
 }
 .types p {
     margin: 0;
+    padding: 1%;
+    width: 80px;
+    border-radius: 10px;
+    color: white;
+}
+.bug {
+    background-color: #3c9950;
+}
+.poison {
+    background-color: #9b69da;
+}
+.grass {
+    background-color: #27cb50;
+}
+.fire {
+    background-color: #fd4b5a;
+}
+.water {
+    background-color: #85a8fb;
+}
+.flying {
+    background-color: #94b2c7;
+}
+.normal {
+    background-color: #ca98a6;
 }
 .stats {
     width: 80%;
