@@ -1,13 +1,31 @@
 import React from "react";
 import './selectedPokemon.css';
 
-const SelectedPokemon = () => {
+const SelectedPokemon = props => {
     return(
         <div className = "selectedPokemon">
+            {props.loading && <p>we're loading in some pokemon, please hold on</p>}
+            {props.error && <p>we can't seem to find your pokemon! we'll contact prof. oak right away: {props.error}</p>}
             <div className = "pokemonImg">
-                <img src = "https://i.pinimg.com/originals/58/7d/49/587d49481ac6eeaa0fb1a07a3804d97f.jpg" alt = "img" />
+                <img src = {`${props.poke.sprites.front_default}`} alt = "img" />
             </div>
-            
+            <h3>{props.poke.name}</h3>
+            <div className = "types">
+                {
+                    props.poke.types.map((ty, index) => {
+                    return(<p key = {index}>{ty.type.name}</p>)
+                    })
+                }
+            </div>
+            <div className = "stats">
+                {
+                    props.poke.stats.map((stert, index) => {
+                        return(
+                            <p key = {index} className = "stat">{stert.stat.name}: {stert.base_stat}</p>
+                        )
+                    })
+                }
+            </div>
         </div>
     )
 }

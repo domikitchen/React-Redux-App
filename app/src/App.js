@@ -8,13 +8,12 @@ import PokemonList from './components/PokemonList';
 import SelectedPokemon from './components/SelectedPokemon';
 
 const App = props => {
-
   return (
     <div className="App">
       <h1>Pokédex</h1>
       <div className = "pokedex">
-        <SelectedPokemon />
-        <PokemonList list = {props.pokemonList} loading = {props.isLoading} error = {props.error} fetchPokemonList = {props.fetchPokemonList} />
+        <SelectedPokemon loading = {props.isLoadingSelect} error = {props.errorSelect} poke = {props.selectedPoke} />
+        <PokemonList list = {props.pokemonList} loading = {props.isLoading} error = {props.error} fetchPokemonList = {props.fetchPokemonList} fetchPokemon = {props.fetchPokemon} />
       </div>
     </div>
   );
@@ -23,10 +22,12 @@ const App = props => {
 const mapStateToProps = state => {
   return {
     name: state.name,
-    pokeUrl: state.pokeUrl,
+    selectedPoke: state.selectedPoke,
     pokemonList: state.pokemonList,
     isLoading: state.isLoading,
-    error: state.error
+    isLoadingSelect: state.isLoadingSelect,
+    error: state.error,
+    errorSelect: state.errorSelect
   }
 }
 

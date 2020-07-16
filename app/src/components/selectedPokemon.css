@@ -2,12 +2,37 @@
     border: 1px solid yellow;
     width: 450px;
     height: 400px;
+    display: flex;
+    flex-flow: column wrap;
+    align-content: center;
+    justify-content: space-around;
+}
+.selectedPokemon h3 {
+    margin: 0;
 }
 .pokemonImg {
+    border: 1px solid pink;
+    margin: 0 auto;
     width: 50%;
-
     overflow: hidden;
 }
 .pokemonImg img {
     width: 100%;
+}
+.types {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+}
+.types p {
+    margin: 0;
+}
+.stats {
+    width: 80%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+}
+.stat {
+    margin: 0;
 }

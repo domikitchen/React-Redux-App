@@ -1,6 +1,18 @@
 .pokemon {
     width: 100px;
-    height: 100px;
+    height: 110px;
     border: 2px solid red;
     display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+}
+.pokemon p {
+    margin: 0;
+}
+.pokeImg {
+    width: 80%;
+    overflow: hidden;
+}
+.pokeImg img {
+    width: 100%;
 }
