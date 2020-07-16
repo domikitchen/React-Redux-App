@@ -1,0 +1,24 @@
+.pokemon {
+    border: 2px solid #f2f2f2;
+    border-radius: 10px;
+    background-color: #f2f2f2;
+    width: 100px;
+    height: 110px;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    box-shadow: 0 0 5px silver;
+}
+.pokemon:hover {
+    box-shadow: 0 0 5px grey;
+}
+.pokemon p {
+    margin: 0;
+}
+.pokeImg {
+    width: 80%;
+    overflow: hidden;
+}
+.pokeImg img {
+    width: 100%;
+}
